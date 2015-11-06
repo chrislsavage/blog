@@ -16,7 +16,7 @@ Object-oriented programming (OOP) has, you can guess, everything to do with obje
 
 Here is an example of a class:
 
-![alt text][../imgs/dieclass.png]
+![alt text](../imgs/dieclass.png)
 
 As you can see. The class is an object that represents a die that you would roll. The die has sides (defined by the method "sides"), and it has a way you can "roll" the dice (defined by the method "roll").
 
