@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 
 <!-- Navigation Start -->
 
+=======
+<!-- Navigation -->
+>>>>>>> gh-pages
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -10,9 +14,15 @@
             {% if page.section-type == "index" %}
               <a class="navbar-brand page-scroll" href="#page-top">
             {% else %}
+<<<<<<< HEAD
               <a class="navbar-brand page-scroll" href="{{site.baseurl}}/index.html#page-top">
             {% endif %}
             <div>{% if site.black-favicon %}<img src="{{site.baseurl}}{{ site.black-favicon }}" alt="">  {% endif %}{{ site.title }}</div>
+=======
+              <a class="navbar-brand page-scroll" href="/index.html#page-top">
+            {% endif %}
+            <div><img src="{{ site.black-favicon }}" alt="">  {{ site.title }}</div>
+>>>>>>> gh-pages
           </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -22,7 +32,10 @@
                 <li class="hidden">
                     <a href="#page-top"></a>
                 </li>
+<<<<<<< HEAD
 
+=======
+>>>>>>> gh-pages
                 {% if page.section-type == "index" %}
 
                   <!-- Scroll to section for each page in index -->
@@ -42,6 +55,7 @@
                       </li>
                     {% elsif p[0] == "Blog" %}
                       <li>
+<<<<<<< HEAD
                         <a class="page-scroll" href="{{site.baseurl}}/blog/index.html"> {{ p[0] }} </a>
                       </li>
                     {% else %}
@@ -51,9 +65,25 @@
                     {% endif %}
                   {% endfor %}
                 {% endif %}
+=======
+                        <a class="page-scroll" href="/blog/index.html"> {{ p[0] }} </a>
+                      </li>
+                    {% else %}
+                      <li>
+                        <a class="page-scroll" href="/index.html#{{ p[1] }}"> {{ p[0] }} </a>
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+
+                {% endif %}
+
+>>>>>>> gh-pages
             </ul>
         </div>
     </div>
 </nav>
+<<<<<<< HEAD
 
 <!-- Navigation End -->
+=======
+>>>>>>> gh-pages

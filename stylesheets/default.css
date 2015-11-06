@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+    font-family: 'Muli', sans-serif;
+    color: #6EB84A;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav ul {
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+}
+.logo-nav {
+    height: 30px;
+}
+.logo {
+    float: left;
+}
+.nav {
+	float: right;
+}
+.pano {
+    width: 100%;
+}
+a:link
+{
+	color:#6EB84A;
+}
+
+a:hover {
+    color: white;
+}
+a:visited{
+    color: white;
+}
+main {
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+h2{
+	text-align: center;
+	font-size: 2em;
+	margin: .75em auto;
+}
+h3{
+	margin: .75em auto;
+}
+.aboutme h3 a img{
+    width:61px;
+    height:60px;
+    vertical-align:middle;
+    padding:5px
+}
+
+.left-col {
+    float: left;
+    width: 49%;
+    text-align: center;
+    margin-right: 3px;
+}
+
+.right-col {
+    float: left;
+    width: 49%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+}
+footer img{
+	width: 30px;
+	height: 30px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+footer p{
+	margin-top: 3px;
+}
+
