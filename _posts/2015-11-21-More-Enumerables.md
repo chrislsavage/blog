@@ -40,36 +40,29 @@ in this case the value you set initially (0) gets passed in as the result memo t
 You can also create new arrays with inject by just passing the values to a new array.
   
 ```ruby
-
 [5, 6, 7, 8].inject([]) do |result_memo, element| 
 result_memo << element.to_s if element % 2 == 0
 result memo
 end  #=>  ["6", "8"]
-
 ```
   
 Lastly you can create hashes by passing in a hash element to the block:
   
 ```ruby
-
 hash = [[:first_name, 'Shane'], [:last_name, 'Harvie']].inject({}) do |result, element|
   result[element.first] = element.last
   result
 end
-
 hash # => {:first_name=>"Shane", :last_name=>"Harvie"}
 ```
 OR
   
 ```ruby
-
 hash = [[:first_name, 'Shane'], [:last_name, 'Harvie']].inject({}) do |result, element|
   result[element.first.to_s] = element.last.downcase
   result
 end
-
 hash # => {"first_name"=>"shane", "last_name"=>"harvie"}
-
 ```
    
 ###Enumerable#map Enumerable#collect
