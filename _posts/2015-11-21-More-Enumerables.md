@@ -15,16 +15,17 @@ Returns **nil**  You need to be able to take the output and turn it into somethi
 
 ###Enumerable#find
 Returns an **object or nil**. Returns first where block is not false
+
 ```ruby
 (1..100).find    { |i| i % 5 == 0 and i % 7 == 0 }   #=> 35
 ```
-
+  
 ###Enumerable#group_by
-
+example
 ```ruby
 1..6).group_by { |i| i%3 }   #=> {0=>[3, 6], 1=>[1, 4], 2=>[2, 5]}
 ```
-
+ 
 ###Enumerable#inject
 You can use inject to create hashes from arrays, build arrays, and just do fun stuff in general.
 
