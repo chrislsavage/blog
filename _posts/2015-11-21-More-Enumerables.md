@@ -18,10 +18,13 @@ Returns an **object or nil**. Returns first where block is not false
 ```ruby
 (1..100).find    { |i| i % 5 == 0 and i % 7 == 0 }   #=> 35
 ```
+
 ###Enumerable#group_by
+
 ```ruby
 1..6).group_by { |i| i%3 }   #=> {0=>[3, 6], 1=>[1, 4], 2=>[2, 5]}
 ```
+
 ###Enumerable#inject
 You can use inject to create hashes from arrays, build arrays, and just do fun stuff in general.
 
@@ -62,6 +65,7 @@ end
 
 hash # => {"first_name"=>"shane", "last_name"=>"harvie"}
 ```
+
 ###Enumerable#map Enumerable#collect
 They are the same thing. Returns an **array**
 
@@ -83,18 +87,23 @@ Returns an **object**. Combines all the items in the enum (See #inject)
 ```ruby
 (5..10).reduce(:+)   #=> 45
 ```
+
 ##Enumerable#reject
 Returns an **ARRAY** where the given block returns false
+
 ```ruby
 [1, 2, 3, 4, 5].reject { |num| num.even? } #=> [1, 3, 5]
 ```
+
 ##Enumerable#select
 The reverse of #reject. Creates an **ARRAY** when the given block returns true.
 
 Returns a **Hash**  when used with a hash object.
+
 ```ruby
 {:a => 1, :b => 2}.select{ |k,v| v == 1 } #=> {:a => 1 }
 ```
+
 ###Enumerable#sort_by
 Returns an **array**.
 
