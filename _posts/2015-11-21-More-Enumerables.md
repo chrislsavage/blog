@@ -15,7 +15,7 @@ Returns **nil**  You need to be able to take the output and turn it into somethi
 
 ###Enumerable#find
 Returns an **object or nil**. Returns first where block is not false
-
+   
 ```ruby
 (1..100).find    { |i| i % 5 == 0 and i % 7 == 0 }   #=> 35
 ```
