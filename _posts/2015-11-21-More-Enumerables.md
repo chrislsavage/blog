@@ -55,6 +55,7 @@ hash = [[:first_name, 'Shane'], [:last_name, 'Harvie']].inject({}) do |result, e
 end
 hash # => {:first_name=>"Shane", :last_name=>"Harvie"}
 ```
+
 OR
   
 ```ruby
