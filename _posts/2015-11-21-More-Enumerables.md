@@ -38,16 +38,16 @@ Inject basically does the same thing as reduce, except you can specify what you 
 in this case the value you set initially (0) gets passed in as the result memo the first time, the object gets set to the value at index 0. If you don't set an initial value the result memo gets set to the first value in the array (0 index), and the object gets set as the second value (1 index).  
 
 You can also create new arrays with inject by just passing the values to a new array.
-
+  
 ```ruby
 [5, 6, 7, 8].inject([]) do |result_memo, element| 
 result_memo << element.to_s if element % 2 == 0
 result memo
 end  #=>  ["6", "8"]
 ```
-
+  
 Lastly you can create hashes by passing in a hash element to the block:
-
+  
 ```ruby
 hash = [[:first_name, 'Shane'], [:last_name, 'Harvie']].inject({}) do |result, element|
   result[element.first] = element.last
@@ -57,7 +57,7 @@ end
 hash # => {:first_name=>"Shane", :last_name=>"Harvie"}
 ```
 OR
-
+  
 ```ruby
 hash = [[:first_name, 'Shane'], [:last_name, 'Harvie']].inject({}) do |result, element|
   result[element.first.to_s] = element.last.downcase
@@ -66,7 +66,7 @@ end
 
 hash # => {"first_name"=>"shane", "last_name"=>"harvie"}
 ```
-
+   
 ###Enumerable#map Enumerable#collect
 They are the same thing. Returns an **array**
 
