@@ -21,7 +21,7 @@ Returns an **object or nil**. Returns first where block is not false
 ```
   
 ###Enumerable#group_by
-example
+  
 ```ruby
 1..6).group_by { |i| i%3 }   #=> {0=>[3, 6], 1=>[1, 4], 2=>[2, 5]}
 ```
