@@ -5,8 +5,8 @@ permalink: /about/
 ---
 
 
-"Education is the most powerful weapon which you can use to change the world.""
---Nelson Mandela
+*"Education is the most powerful weapon which you can use to change the world."*
+**--Nelson Mandela**
 
 I started playing with computers before Windows 3.1 came into existence. I enjoyed building programs in BASIC and using the DOS prompt to play Pango.
 
